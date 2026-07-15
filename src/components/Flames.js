@@ -6,7 +6,10 @@ function Flames() {
   const [answer, setAnswer] = useState("");
 
   function flameslogic() {
-    
+    if(!firstname || !secondname){
+        setAnswer("please enter valid input")
+        return;
+    }
 
     let n1 = firstname.toLowerCase().split("");
     let n2 = secondname.toLowerCase().split("");
@@ -86,7 +89,7 @@ function Flames() {
         Clear
       </button>
 
-      <h3>{answer}</h3>
+      <h3 data-testid="answer">{answer}</h3>
     </div>
   );
 }
