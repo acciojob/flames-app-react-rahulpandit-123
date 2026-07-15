@@ -11,8 +11,8 @@ function Flames() {
         return;
     }
 
-    let n1 = firstname.toLowerCase().split("");
-    let n2 = secondname.toLowerCase().split("");
+    let n1 = firstname.split("");
+    let n2 = secondname.split("");
 
     for (let i = 0; i < n1.length; i++) {
       for (let j = 0; j < n2.length; j++) {
